@@ -11,6 +11,6 @@ submit.addEventListener("click", () => {
 
 rates.forEach((rate) => {
   rate.addEventListener("click", () => {
-    rating.innerHTML = rates.innerHTML;
+    rating.innerHTML = rate.innerHTML;
   });
 });
