@@ -1,0 +1,273 @@
+/*CSS Reset*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*My Style*/
+:root {
+  --lightgrey: hsl(217, 12%, 63%);
+  --mediumgrey: hsl(216, 12%, 54%);
+  --darkblue: hsl(213, 19%, 18%);
+  --Verydarkblue: hsl(216, 12%, 8%);
+  --primary: hsl(25, 97%, 53%);
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  background-color: var(--Verydarkblue);
+  display: grid;
+  place-items: center;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: hsl(214, 22%, 14%);
+  width: 20rem;
+  height: 20rem;
+  border-radius: 1rem;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.boxmodel-1 {
+  position: absolute;
+  margin: 1.5rem;
+}
+
+.boxmodel-1 img {
+  display: block;
+  width: 14px;
+  height: 13px;
+  background-color: var(--darkblue);
+  padding: 0.8rem;
+  border-radius: 50%;
+}
+
+.boxmodel-1 h1 {
+  font-size: 1.5rem;
+  margin: 2rem 0 1rem;
+  color: #fff;
+}
+
+.boxmodel-1 p {
+  font-size: 0.8rem;
+  color: var(--mediumgrey);
+  line-height: 1.1rem;
+  margin: 1rem 0;
+}
+
+.boxmodel-1 .tombol {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tombol button {
+  display: inline-block;
+  border-radius: 50%;
+  background-color: var(--darkblue);
+  border: none;
+  color: var(--mediumgrey);
+  padding: 0.8rem 1rem;
+  margin: 0 0 1rem;
+  transition: 0.3s;
+}
+
+.tombol button:hover {
+  color: white;
+  background-color: var(--primary);
+  transform: scale(1.1, 1.1);
+  cursor: pointer;
+}
+
+.tombol button:focus {
+  background-color: var(--mediumgrey);
+  color: #fff;
+}
+
+.boxmodel-1 input {
+  width: 100%;
+  border-radius: 1rem;
+  padding: 0.75rem 0;
+  border: none;
+  letter-spacing: 0.15rem;
+  font-size: 0.6rem;
+  font-weight: 700;
+  background-color: var(--primary);
+  color: #fff;
+  transition: 0.3s;
+}
+
+.boxmodel-1 input:hover {
+  background-color: #fff;
+  color: var(--primary);
+  font-size: 0.63rem;
+  cursor: pointer;
+  transform: scale(1.02, 1.02);
+}
+
+.boxmodel-2 {
+  position: absolute;
+  margin: 1.4rem 1.5rem;
+  text-align: center;
+}
+
+.boxmodel-2 .icon-select p {
+  color: hsl(34, 91%, 50%);
+  font-size: 0.7rem;
+  background-color: var(--darkblue);
+  align-items: center;
+  width: 40%;
+  padding: 0.5rem 0.7rem;
+  margin: 1rem auto 0;
+  border-radius: 1.5rem;
+}
+
+.boxmodel-2 .anount {
+  margin: 2rem 0;
+}
+
+.boxmodel-2 h1 {
+  font-size: 1.4rem;
+  margin-bottom: 0.7rem;
+  color: #fff;
+}
+
+.boxmodel-2 .anount p {
+  color: var(--mediumgrey);
+  font-size: 0.75rem;
+  line-height: 1.2rem;
+}
+
+/* hidden box start */
+.hidden {
+  display: none;
+}
+/* hidden box end */
